@@ -9,11 +9,15 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
+            $table->string('admin_name');
+            $table->string('email')->unique();
+            $table->string('senha');
             $table->timestamps();
+            $table->softDeletes(); 
         });
     }
 
