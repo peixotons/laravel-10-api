@@ -15,7 +15,7 @@ class Orders extends Model
         'id_customer',
         'status'
     ];
-    
+
     protected $table = 'orders';
 
     public function companies()

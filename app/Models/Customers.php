@@ -22,6 +22,6 @@ class Customers extends Model
 
     public function company()
     {
-        return  $this->belongsTo(Company::class, 'id_companies', 'id'); 
+        return  $this->belongsTo(Company::class, 'id_companies', 'id');
     }
 }

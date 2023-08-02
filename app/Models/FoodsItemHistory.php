@@ -20,13 +20,13 @@ class FoodsItemHistory extends Model
         'new_food_image_url'
     ];
 
-    protected $table = 'food_item_history';   
-    
+    protected $table = 'food_item_history';
+
     public function company()
     {
-       return $this->belongsTo(Company::class, 'id_companies', 'id');
+        return $this->belongsTo(Company::class, 'id_companies', 'id');
     }
-    
+
     public function food()
     {
         return $this->belongsTo(Foods::class, 'id_food', 'id');

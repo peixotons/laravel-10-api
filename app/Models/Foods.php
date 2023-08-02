@@ -15,7 +15,7 @@ class Foods extends Model
     protected $table = 'food_items';
 
     public function company()
-    {   
+    {
         return $this->belongsTo(Company::class, 'id_companies', 'id');
     }
 
